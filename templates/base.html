@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static './css/base.css' %}">
+    <link rel="stylesheet" href="{% static './css/header.css' %}">
+    <link rel="stylesheet" href="{% static './css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static './css/section.css' %}">
+    <link rel="stylesheet" href="{% static './css/project_list.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header class="center-row">
+        <nav>
+            <!-- Hamburger button -->
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <!-- Links or Options of the Menu -->
+            <div class="nav-link center-row">
+                <a href="{% url 'about' %}">About Me</a>
+                <a href="{% url 'project' %}">Projects</a>
+                <a href="#">Experience</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}
+
+    {% endblock content %}
+</body>
+</html>

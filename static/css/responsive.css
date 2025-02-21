@@ -1,0 +1,81 @@
+/*Tablet*/
+@media(max-width:1007px) {
+    html {
+        font-size: 12px;
+    }
+
+    /* About Me Section */
+    .about-section{
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .about-image-container{
+        width: 70%;
+    }
+
+    .about-description-container{
+        width: 85%;
+        margin-top: 3rem;
+    }
+
+    /* Skills Section */
+    .skills-list{
+        width: 70%;
+    }
+
+}
+
+/* phone */
+@media(max-width:640px) {
+    html {
+        font-size: 10px;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    header {
+        height: max-content;
+        padding: 2%;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Toggle function */
+    .nav-btn {
+        display: inline-flex;
+    }
+
+    #nav-check:not(:checked)~.nav-link {
+        height: 0px;
+        overflow: hidden;
+    }
+
+    #nav-check:checked~.nav-link {
+        height: auto;
+        overflow: auto;
+    }
+
+    .div_project_container{
+        flex-direction: column;
+        gap: 3rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+
+    .border-bot{
+        border-bottom: 1px solid rgba(177, 164, 164, 0.219);
+    }
+
+    .project_list_h1 > h1{
+        text-align: center;
+        margin: 2rem;
+        width: 50%;
+        border-bottom: 1px solid black;
+    }
+}

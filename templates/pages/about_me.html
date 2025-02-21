@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="about-section center-row">
+    <div class="about-image-container center-row">
+        <img src="{% static './img/my-photo.png' %}" alt="my amazing picture">
+    </div>
+    <div class="about-description-container center-column">
+        <h1>My role as developer</h1>
+        <h2>Christian Albrand Aguirre</h2>
+
+        <p>
+            As a dedicated and forward-thinking developer, I am committed to building efficient, scalable solutions that push the boundaries of performance optimization. I also focus on integrating emerging technologies to ensure that the applications I develop remain at the forefront of innovation.
+            I enjoy solving programming and mathematical logic problems to continuously sharpen my problem-solving skills and enhance my logical thinking and
+            Currently, my primary focus is on backend development, where I enjoy the intricacies of code optimization and the challenges of building robust, high-performance systems. I find the complexity and problem-solving aspects of backend work far more engaging than designing and styling, as it allows me to create powerful, scalable, and efficient architectures.
+        </p>
+    </div>
+</section>
+
+<section class="skills-section center-column">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+        <label class="text-label">Python</label>
+        <label class="text-label">Java</label>
+        <label class="text-label">Java Script</label>
+        <label class="text-label">Full Stack</label>
+        <label class="text-label">Design</label>
+        <label class="text-label">Leadership</label>
+        <label class="text-label">Team Work</label>
+        <label class="text-label">Django</label>
+        <label class="text-label">api connections</label>
+        <label class="text-label">SQL</label>
+        <label class="text-label">UX Design</label>
+    </div>
+</section>
+{% endblock content %}
