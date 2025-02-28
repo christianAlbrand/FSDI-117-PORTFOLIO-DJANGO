@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="new-project-section">
+    <h2>New Project</h2>
+
+    <form class="form-project" id="projectForm" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div>
+            <p>Project Name</p>{{ form.name }}
+            <p>Project Description</p>{{ form.description }}
+            <p>Created On</p>{{ form.year }}
+            <p>Project Image</p>{{ form.image }}
+            <p>GitHub Project Link</p>{{ form.repository }}
+            <p>Project Skills</p>{{ form.skill }}
+        </div>
+        <div class="controls">
+            <button type="reset">Reset</button>
+            <button type="submit">Save Project</button>
+        </div>
+    </form>
+</section>
+
+{% endblock content %}

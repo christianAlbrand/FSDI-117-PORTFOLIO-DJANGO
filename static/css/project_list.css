@@ -1,15 +1,8 @@
-/* Title Section */
 .project-title-container {
     text-align: center;
     margin: 30px 0;
 }
 
-.project-title-container h1 {
-    font-size: 2rem;
-    color: #2c3e50;
-}
-
-/* Project Container */
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +11,6 @@
     padding: 20px;
 }
 
-/* Individual Project Card */
 .project-card {
     background: white;
     border-radius: 12px;
@@ -34,14 +26,12 @@
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Project Image */
 .project-thumbnail {
     width: 100%;
     border-radius: 8px;
     object-fit: cover;
 }
 
-/* Project Details */
 .project-card h2 {
     font-size: 1.5rem;
     color: #34495e;
@@ -53,7 +43,6 @@
     color: #555;
 }
 
-/* Skills List */
 .project-skills {
     display: flex;
     flex-wrap: wrap;
@@ -68,4 +57,77 @@
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9rem;
+}
+
+/* NEW PROJECT SECTION  */
+
+.new-project-section {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.new-project-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-project{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-project input,
+.form-project textarea,
+.form-project select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.form-project textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.controls button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.controls button[type="reset"] {
+    background: #e74c3c;
+    color: white;
+    margin-right: 10px;
+}
+
+.controls button[type="submit"] {
+    background: #2ecc71;
+    color: white;
+    margin-left: 10px;
+}
+
+/* Efecto hover */
+.controls button:hover {
+    opacity: 0.8;
 }

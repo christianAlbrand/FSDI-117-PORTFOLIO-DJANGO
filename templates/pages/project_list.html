@@ -3,9 +3,13 @@
 {% load static %}
 
 {% block content %}
-<div class="project-title-container">
-    <h1>Welcome to my projects</h1>
-</div>
+
+{% if user.is_authenticated %}
+    <div class="project-title-container">
+        <a href="{% url 'project_new' %}" class="btn">Add new Project</a>
+    </div>
+{% endif %}
+<h1 style="text-align: center;">Welcome to my projects</h1>
 <div class="project-container">
     {% for project in projects %}
         <section class="project-card">
